@@ -1,5 +1,5 @@
 """
-CP5632 Practical 1
+CP5632 Practical 3
 
 Program to convert between Celsius and Fahrenheit temperatures
 """

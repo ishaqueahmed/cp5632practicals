@@ -1,21 +1,20 @@
 """
 CP5632 Practical 3
 
-Debugged version of program to determine score status
+Ask the user for the number of scores to generate randomly and add the
+results to results.txt
 """
 
 import random
 
 
 def main():
-    score = float(input("Enter score: "))
-    status = determine_status(score)
-    print(status)
-
-    score = random.randint(0, 100)
-    print("\nRandom score: {}".format(score))
-    status = determine_status(score)
-    print(status)
+    scores_count = int(input("Enter number of scores to generate randomly: "))
+    file = open("results.txt", "w")
+    for i in range(0, scores_count):
+        score = random.randint(0, 100)
+        status = determine_status(score)
+        file.write("{} is {}\n".format(score, status))
 
 
 def determine_status(score):
