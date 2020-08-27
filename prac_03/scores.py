@@ -1,7 +1,7 @@
 """
 CP5632 Practical 3
 
-Ask the user for the number of scores to generate randomly and add the
+Ask the user for the number of scores to generate randomly and write the
 results to results.txt
 """
 
@@ -15,6 +15,7 @@ def main():
         score = random.randint(0, 100)
         status = determine_status(score)
         file.write("{} is {}\n".format(score, status))
+    file.close()
 
 
 def determine_status(score):
