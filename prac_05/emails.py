@@ -6,7 +6,7 @@ Program to get names and emails from the user and add them to dictionary
 
 
 def main():
-    email_list = {}
+    email_collection = {}
 
     email = input("Email: ")
     while email != "":
@@ -16,11 +16,11 @@ def main():
         verify_name = input("Is your name {}? (y/n) ".format(name)).lower()
         if verify_name == "n":
             name = input("Name: ")
-        email_list[name] = email
+        email_collection[name] = email
         email = input("Email: ")
 
     print()
-    for name, email in email_list.items():
+    for name, email in email_collection.items():
         print("{} ({})".format(name, email))
 
 
