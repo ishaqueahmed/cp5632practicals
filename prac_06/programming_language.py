@@ -12,7 +12,7 @@ class ProgrammingLanguage:
         self.year = year
 
     def __str__(self):
-
+        """Return string information about ProgrammingLanguage object"""
         return "{}, {} Typing, Reflection={}, First appeared in {}"\
             .format(self.name, self.typing, self.reflection, self.year)
 
