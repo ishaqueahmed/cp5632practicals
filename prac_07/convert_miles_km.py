@@ -40,4 +40,4 @@ class MilesToKilometresApp(App):
             return 0
 
 
-MilesToKilometres().run()
+MilesToKilometresApp().run()
