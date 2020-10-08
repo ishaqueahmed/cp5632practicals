@@ -10,7 +10,7 @@ from kivy.lang import Builder
 CONVERSION_FACTOR = 1.609
 
 
-class MilesToKilometres(App):
+class MilesToKilometresApp(App):
     """Kivy App for squaring a number"""
 
     def build(self):
