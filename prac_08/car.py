@@ -1,6 +1,8 @@
-"""CP5632 Practical 8
+"""
+CP5632 Practical 8
 
- Car class example."""
+Car class example.
+"""
 
 
 class Car:
