@@ -12,7 +12,7 @@ def main():
     hummer = SilverServiceTaxi("Hummer", 200, 2)
     hummer.drive(18)
     print(hummer)
-    print("Fare: $" + str(hummer.get_fare()))
+    print("Fare: ${:.2f}".format(hummer.get_fare()))
 
 
 main()
